@@ -14,7 +14,7 @@ Shard = namedtuple('ShardConfig','shard_name,shard_node_list,result_nodes')
 Mongos = namedtuple('Mongos','pid_file_name log_file db_port host_name is_started')
 
 class MongoBase(Script):
-    repos_file_path = '/etc/yum.repos.d/mongodb.repo'
+    repos_file_path = '/etc/apt/sources.list.d/mongodb-org-3.2.list'
     mongo_packages = ['mongodb-org']
 
     def __init__(self):
